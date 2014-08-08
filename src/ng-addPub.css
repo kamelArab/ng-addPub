@@ -1,0 +1,39 @@
+.addPub{
+
+    display:table-cell;
+    vertical-align:middle;
+    border: 1px solid black;
+    position: fixed;
+}
+.addPub.add-pub-close , .addPub.add-pub-open{
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+}
+
+.addPub.add-pub-open{
+    right: 0px !important;
+}
+
+.addPub .header{
+    list-style: none;
+    background-color: green;
+    float: left;
+    text-align: center;
+}
+.addPub .header ul{
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style-type : none;
+    background-color: green;
+    text-align: center;
+}
+
+.addPub .body{
+    background-color: blue;
+    border: 1px solid black;
+    float: right;
+    right: 0;
+    text-align: center;
+}
