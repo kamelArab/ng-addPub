@@ -1,15 +1,24 @@
 .addPub{
-
+    height: 100%;
     display:table-cell;
     vertical-align:middle;
-    border: 1px solid black;
+    border: 0px solid black;
     position: fixed;
 }
 .addPub.add-pub-close , .addPub.add-pub-open{
-    -webkit-transition: 2s ease-in-out;
-    -moz-transition: 2s ease-in-out;
-    -o-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;
+    -webkit-transform: translate3d(0px,0,0);
+    -moz-transform: translate3d(0px,0,0);
+    -ms-transform: translate3d(0px,0,0);
+    -o-transform: translate3d(0px,0,0);
+    transform: translate3d(0px,0,0);
+    -webkit-transition-property: left,right;
+    -moz-transition-property: left,right;
+    -o-transition-property: left,right;
+    transition-property: left,right;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .addPub.add-pub-open{
@@ -20,6 +29,7 @@
     list-style: none;
     background-color: green;
     float: left;
+    width: 20px;
     text-align: center;
 }
 .addPub .header ul{
@@ -36,4 +46,16 @@
     float: right;
     right: 0;
     text-align: center;
+    display: table;
+    height: inherit;
+}
+.addPub .body .pre-scrollable{
+    display: table-cell;
+    vertical-align: middle;
+}
+.pre-stumb-popup{
+    position: absolute;
+    top: 0;
+    bottom:0 ;
+    right: 0;
 }
